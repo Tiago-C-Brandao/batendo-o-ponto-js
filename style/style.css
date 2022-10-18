@@ -1,0 +1,124 @@
+/*
+    Saddle Brown: #813405;
+    Burnt Orange: #D45113;
+    Vivid Sky Blue: #0AD3FF;
+    Aquamarine: #78FFD6;
+    Deep Saffron: #F9A03F;
+*/
+
+
+body {
+    background-color: #78FFD6;
+    margin: 0;
+}
+.container {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 450px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    background-color: #0AD3FF;
+    padding: 55px;
+    border-radius: 12px;
+}
+.enter {
+    display: flex;
+    justify-content: space-between;
+}
+.enter .point {
+    margin-left: -130px;
+    margin-right: -50px;
+}
+.enter input {
+    display: flex;
+    margin-top: 11px;
+    margin-right: 80px;
+    width: 70px;
+    height: 30px;
+    border-radius: 10px;
+    border: none;
+    text-align: center;
+}
+.lunch {
+    display: flex;
+    justify-content: space-between;
+}
+.lunch input {
+    display: flex;
+    margin-top: 11px;
+    margin-right: 100px;
+    width: 70px;
+    height: 30px;
+    border-radius: 10px;
+    border: none;
+    text-align: center;
+}
+.ped-w {
+    display: flex;
+    justify-content: space-between;
+}
+.ped-w input {
+    display: flex;
+    margin-top: 11px;
+    margin-right: 170px;
+    width: 70px;
+    height: 30px;
+    border-radius: 10px;
+    border: none;
+    text-align: center;
+}
+
+.ped {
+    display: none;
+    justify-content: space-between;
+}
+
+.ped input {
+    display: flex;
+    margin-top: 11px;
+    margin-right: 200px;
+    width: 70px;
+    height: 30px;
+    border-radius: 10px;
+    border: none;
+    text-align: center;
+}
+
+.english-w {
+    display: flex;
+    justify-content: space-between;
+}
+.english-w input {
+    display: flex;
+    margin-top: 11px;
+    margin-right: 170px;
+    width: 70px;
+    height: 30px;
+    border-radius: 10px;
+    border: none;
+    text-align: center;
+}
+
+.english {
+    display: flex;
+    justify-content: space-between;
+    display: none;
+}
+.english input {
+    display: flex;
+    margin-top: 11px;
+    margin-right: 200px;
+    width: 70px;
+    height: 30px;
+    border-radius: 10px;
+    border: none;
+    text-align: center;
+}
+
+.result {
+    display: flex;
+    margin-top: 10px;
+    margin-left: 40%;
+    border: none;
+    border-radius: 10px;
+}

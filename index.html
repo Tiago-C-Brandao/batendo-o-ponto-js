@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="style/style.css">
+        <title>Batento o Ponte</title>
+    </head>
+    <body>
+        <div class="container">
+            <form class="enter">    
+                <p>Que horas você entrou?</p>
+                <input type="text" placeholder="00" maxlength="2" class="enter-hour" id="enterHour">
+                <p class="point">:</p>
+                <input type="text" placeholder="00" maxlength="2" class="enter-minute" id="enterMinute">
+            </form>
+            <form class="lunch">    
+                <p>Quantos minutos você fará de almoço?</p>
+                <input type="number" placeholder="00" class="lunch" id="lunch">
+            </form>
+            <form class="ped-w">    
+                <p>Você fará PED hoje?</p>
+                <p>Sim</p>
+                <input type="checkbox" id="checkPed" value="s">
+            </form>
+            <form class="ped">    
+                <p>Quantos minutos serão?</p>
+                <input type="number" placeholder="00" value="00" id="ped">
+            </form>
+            <form class="english-w">    
+                <p>Você fará inglês hoje?</p>
+                <p>Sim</p>
+                <input type="checkbox" id="checkEnglish" value="s">
+            </form>
+            <form class="english">    
+                <p>Quantos minutos serão?</p>
+                <input type="number" placeholder="00" value="00" id="english">
+            </form>
+            <form class="result">
+                <button id="btnResult">Resultado</button>
+            </form>
+        </div>
+        <script src="js/script.js"></script>
+    </body>
+</html>
