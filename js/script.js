@@ -1,21 +1,8 @@
-let enterHour = document.querySelector('#enterHour');
-let enterMinute = document.querySelector('#enterMinute');
-let lunchMinute = document.querySelector('#lunch');
+let input = document.querySelectorAll('#value');
 let pedCheck = document.querySelector('#checkPed');
-let pedMinute = document.querySelector('#ped')
 let pedForm = document.querySelector('form.ped');
 let englishCheck = document.querySelector('#checkEnglish');
-let englishMinute = document.querySelector('#english')
 let englishForm = document.querySelector('form.english');
-let btnResult = document.querySelector('#btnResult');
-
-enterHour.addEventListener('keypress', (e) => {
-    enterMinute.focus()
-});
-
-enterMinute.addEventListener('keypress', (e) => {
-    lunchMinute.focus()
-})
 
 pedCheck.addEventListener('click', (e) => {
     if(pedForm.style.display != 'flex') {
@@ -33,28 +20,26 @@ englishCheck.addEventListener('click', (e) => {
     englishForm.style.display = 'none';
 })
 
-pedMinute.addEventListener('click', (e) => {
-    pedMinute.value = ' ';
+input[3].addEventListener('click', (e) => {
+    input[3].value = ' ';
 })
 
-englishMinute.addEventListener('click', (e) => {
-    englishMinute.value = ' ';
+input[4].addEventListener('click', (e) => {
+    input[4].value = ' ';
 })
 
-btnResult.addEventListener('click', (e) => {
-    result()
-})
+function result() {
+    let totalMinutes = 0
+    for(var x = 0; x < input.length; x++) {
+        a = parseInt(input[x].value)
+        if(x == 0) {
+            totalMinutes += a * 60    
+        } else {
+            totalMinutes += a
+        }
+    }
 
-function result(){
-    hourConvert = parseInt(enterHour.value * 60)
-    minuteConvert = parseInt(enterMinute.value)
-    lunchConvert = parseInt(lunchMinute.value)
-    pedConvert = parseInt(pedMinute.value)
-    englishConvert = parseInt(englishMinute.value)
-    totalMinutes = hourConvert + minuteConvert + lunchConvert + pedConvert + englishConvert
-    
-    convertHour = (totalMinutes + 480) / 60
-    finalMinute = (totalMinutes + 480) % 60
-
-    alert('Você precisará largar às ' + parseInt(convertHour) + ':' + parseInt(finalMinute))
+    hour = parseInt((480 + totalMinutes) / 60)
+    minutes = parseInt((480 + totalMinutes) % 60)
+    alert(hour + ":" + minutes)
 }
